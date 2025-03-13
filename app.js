@@ -54,8 +54,10 @@ function captureImage () {
     const data = canvas.toDataURL('image/png')
     currentImageElement.src = data
     photosButton.style.backgroundImage = `url(${data})`
-    capturedImages.push(data)
+    // capturedImages.unshift(data) would be better but it doesn't work for some reason
     capturedImages.reverse()
+    capturedImages.push(data)
+    capturedImages.reverse() // if this is here then you need to reverse -> push -> reverse
 
     // Create new Image elements from array
     capturedImages.forEach((image) => {
