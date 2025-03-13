@@ -74,14 +74,14 @@ closeGalleryButton.addEventListener('click', () => gallery.classList.remove('sho
 
 // Event handlers to browse gallery (next and previous)
 nextButton.addEventListener('click', () => {
-    const index Number(currentImageElement.getAttribute('data-index'))
+    const index = Number(currentImageElement.getAttribute('data-index'))
     if (capturedImages[index + 1]) {
         currentImageElement.src = capturedImages[index + 1]
         currentImageElement.setAttribute('data-index', index + 1)
     }
 })
 prevButton.addEventListener('click', () => {
-    const index Number(currentImageElement.getAttribute('data-index'))
+    const index = Number(currentImageElement.getAttribute('data-index'))
     if (capturedImages[index - 1]) {
         currentImageElement.src = capturedImages[index - 1]
         currentImageElement.setAttribute('data-index', index - 1)
