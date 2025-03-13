@@ -14,6 +14,7 @@ The goal of this project is to give users a simple way to share their projects. 
     - email
     - consent to post
     - name
+    - consent to share name in post
     - TID?
     - project name
     - project description
@@ -23,3 +24,11 @@ The goal of this project is to give users a simple way to share their projects. 
     - raspberry pi
     - touchscreen
     - 3d printed case (probably)
+
+# Design
+
+- locally hosted web server
+    - forms are easy with html/javacsript
+    - easy to scale to web app
+    - camera part is already built
+    - takes a few more steps to start than a python approach
