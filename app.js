@@ -7,6 +7,8 @@ const closeGalleryButton = document.getElementById('close-gallery')
 const nextButton = document.getElementById('next')
 const prevButton = document.getElementById('prev')
 const canvas = document.getElementById('canvas')
+const mainScreenButton = document.getElementById('main-screen-btn')
+const mainScreen = document.getElementById('main-screen-div')
 
 let width = window.innerWidth
 let height = 0
@@ -73,6 +75,10 @@ photosButton.addEventListener('click', () => {
     currentImageElement.setAttribute('data-index', 0)
 })
 closeGalleryButton.addEventListener('click', () => gallery.classList.remove('show-gallery'))
+
+mainScreenButton.addEventListener('click', () => {
+    mainScreen.classList.add('hidden')
+})
 
 // Event handlers to browse gallery (next and previous)
 nextButton.addEventListener('click', () => {

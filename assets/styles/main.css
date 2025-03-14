@@ -25,6 +25,26 @@ button {
     -o-transition: 0.3s ease-in;
 }
 
+.main-screen {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #a01010;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    transition: 0.4s;
+}
+.main-screen.hidden {
+    transform: translateX(-100vh);
+}
+.main-screen button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
 /* Camera Container */
 .camera-ctn {
     position: relative;
