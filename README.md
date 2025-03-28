@@ -5,6 +5,7 @@ The goal of this project is to give users a simple way to share their projects. 
 # TODO
 
 - [ ] make a better TODO list
+- [ ] add more pages to the site through more css wizardry
 
 # Requirements
 
